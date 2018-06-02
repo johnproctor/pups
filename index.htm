@@ -24,6 +24,7 @@ body {
     	text-align: center;
 	color: white;
 	font: 25px arial, sans-serif;
+	text-shadow: 2px 2px #000000;
 }
 	</style>
 
@@ -39,7 +40,7 @@ body {
 (function() {
  var messages = ["It was you, wasn't it?", "Hroar being flushed isn't drama", "I blame Pup Drowzee", "Is it in the Watchdog yet?", "A Mr Puppy did it", "What did Vulferam do now?", "Blame the furries", "Blame a fox", "Was it becase of a RubberAsylum poll?", "Was there a tombstone?"];
 
-var randomMessage = messages [Math.floor(Math.random() * messages.length)];
+var randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
 document.getElementById("tag").textContent= randomMessage;
 })();
