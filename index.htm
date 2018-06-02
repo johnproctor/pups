@@ -7,22 +7,42 @@
   	<title>Days without pup drama</title>
 
 	<style type="text/css">
-	.container {
-    left: 0;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+body {
+	background-image: url('flush.jpg');
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-position: center; 
+}
+
+.container {
+   	left: 0;
+    	margin: auto;
+    	margin-top: -100px;
+    	position: absolute;
+    	top: 50%;
+    	width: 100%;
+    	text-align: center;
+	color: white;
+	font: 25px arial, sans-serif;
 }
 	</style>
+
    </head>
    <body>
 	<div class="container">
 		<h1>Days without pup drama:</h1>
 		<h2>0</h2>
-		<h3>It was you, wasn't it?</h3>
+		<h3 id='tag'>It was you, wasn't it?</h3>
 	</div>
+
+<script>
+(function() {
+ var messages = ["It was you, wasn't it?", "Hroar being flushed isn't drama", "I blame Pup Drowzee", "Is it in the Watchdog yet?", "A Mr Puppy did it", "What did Vulferam do now?", "Blame the furries", "Blame a fox", "Was it becase of a RubberAsylum poll?", "Was there a tombstone?"];
+
+var randomMessage = messages [Math.floor(Math.random() * messages.length)];
+
+document.getElementById("tag").textContent= randomMessage;
+})();
+</script>
    </body>
 </html>
